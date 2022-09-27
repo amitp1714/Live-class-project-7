@@ -1,0 +1,224 @@
+*{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* <!------- Nav section --------> */
+
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+nav .nav-items{
+    display: flex;
+    flex-direction: row;
+}
+nav h5:hover{
+    cursor: pointer;
+}
+h5.nav-item{
+    font-size: 16px;
+    padding-left: 60px;
+}
+nav img:first-child{
+    width: 80px;
+}
+nav img:last-child{
+    width: 300px
+}
+h5.nav-item.active-item{
+    color: orangered;
+    font-weight: 800;
+}
+
+/* <!------- Intro section -------> */
+
+div.intro-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding:0 20px;
+}
+
+/* <!----- left ------> */
+
+div.left-section h3{
+    font-size: 40px;
+}
+div.left-section img{
+    height: 30px;
+}
+div.left-section h1{
+    font-family: 'Fredoka One';
+    font-size: 60px;
+}
+div.left-section h5{
+    font-size: 15px;
+    line-height: 5px;
+}
+h5.sub-headline img{ 
+    background: orangered;
+    border-radius:20px;
+    padding: 5px;
+    height: 15px;
+}
+div.sub-headlines{
+    padding-left: 70px; 
+}
+p.text{
+    padding: 10px 0px;
+    opacity: 0.5;
+}
+button.action-btn{
+    border-radius: 20px;
+    border-style: none;
+    background: tomato;
+    color: white;
+    padding: 10px 35px;
+    margin: 10px;
+}
+
+/* <!------- Right ------> */
+
+div.right-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.headphone{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.headphone .discount{
+    position: relative;
+    width: 120px;
+    top: 100px;
+    left: 160px;
+}
+div.discount-content{
+    position: relative;
+    font-family: 'Fredoka One';
+    color: white;
+    top: 285px;
+    left: 70px;
+}
+.discount-content h4{
+    position: relative;
+    top: 25px;
+    font-size: 10px;
+    font-weight: 700;
+
+}
+.discount-content h1{
+    font-size: 35px ;
+    font-weight: 700;
+}
+
+div.headphone img:last-child{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 500px;
+}
+div.dots{
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+}
+div.dots div{
+    border-radius: 20px;
+    height: 20px;
+    width: 20px;
+    margin: 15px;  
+}
+div.yellow-dot{
+    background: yellow;
+}
+div.tomato-dot{
+    background: tomato;
+}
+div.black-dot{
+    background: black;
+}
+button.add-to{
+    position: relative;
+    left: 100px;
+}
+
+@media screen and (max-width:1323px){
+    div.headphone img:last-child{
+        width: 400px;
+    }
+    div.left-section h1{
+        font-size: 50px;
+    }
+    div.left-section h5{
+        font-size: 10px;
+    }
+    p.text{
+        font-size: 12px;  
+    }
+    div.discount-content{
+        top: 230px; 
+    }
+}
+@media screen and (max-width:1000px){
+    div.intro-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    div.right-section{
+        margin-right: 200px;
+    }
+}
+@media screen and (max-width:850px){
+    div.nav-items{
+        display: none;
+    }
+}
+@media screen and (max-width:500px){
+    div.headphone img:last-child{
+        width: 300px;
+    }
+    div.right-section{
+        margin-left: 50px;
+    }
+    div.discount-content{
+        top: 230px; 
+    }
+    .headphone .discount{
+        width: 80px;
+        top: 70px;
+        left: 130px;
+    }
+    div.discount-content{
+        top: 170px;
+        left: 70px;
+    }
+    .discount-content h4{
+        top: 20px;
+        font-size: 8px;
+        font-weight: 700;
+    }
+    .discount-content h1{
+        font-size: 25px ;
+        font-weight: 700;
+    }
+    div.dots{
+        margin-right: 80px;
+    }
+    button.add-to{
+        left: 65px;
+    }
+}
